@@ -31,6 +31,47 @@ To write a Python program that uses **Hierarchical Inheritance** to input and di
 5. Display collected information using class methods.
 
 ## Program
-Add code here
+```
+class Details:
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+    def getName(self):
+        return self.name
+    def getAge(self):
+        return self.age
+class Employee(Details):
+    def __init__(self,name,age,employee_id,department):
+        super().__init__(name,age)
+        self.employee_id=employee_id
+        self.department=department
+    def getEmployeeDetails(self):
+        print(self.name,self.age,self.employee_id,self.department)
+class Patient(Details):
+    def __init__(self,name,age,patient_id,disease):
+        super().__init__(name,age)
+        self.patient_id=patient_id
+        self.disease=disease
+    def getPatientDetails(self):
+        print(self.name,self.age,self.patient_id,self.disease)
+ename=input()
+eage=int(input())
+eid=input()
+dept=input()
+pname=input()
+page=int(input())
+pid=input()
+disease=input()
+e=Employee(ename,eage,eid,dept)
+p=Patient(pname,page,pid,disease)
+e.getEmployeeDetails()
+p.getPatientDetails()
+```
+
 ## Sample Output
+<img width="414" height="413" alt="image" src="https://github.com/user-attachments/assets/d1c901df-0c09-4f0e-bd11-968bec9b93e8" />
+
+## Result
+Thus the program demonstrating inheritance using base and derived classes has been executed successfully.
+The employee and patient details are accepted and displayed.
 
