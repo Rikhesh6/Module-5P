@@ -1,4 +1,4 @@
-# # Constructors in Python: Welcome Message with Student Name
+## Constructors in Python: Welcome Message with Student Name
 
 ## 🎯 Aim
 To write a Python program that creates a **Student** class with a **default constructor** and a method to display a welcome message along with the student’s name provided by the user.
